@@ -1,0 +1,21 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="card">
+  <img src="{{ url_for('static', filename='img/logo.jpeg') }}" class="logo" />
+  <h1 class="site-title">{{ title }}</h1>
+  <p class="subtitle">Demo for embedding Plotly Dash within Flask Apps (View source on <a href="https://github.com/toddbirchard/plotlydash-flask-tutorial">Github</a>).</p>
+  <a href="/instrumentos/" class="dash-link">
+    <span>Instrumentos Financieros</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+  <a href="/dashapp/" class="dash-link">
+    <span>Extractor SQL</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+  <a href="/dashapp/" class="dash-link">
+    <span>Analisis de Empleos</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+{% endblock %}
